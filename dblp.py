@@ -3,7 +3,7 @@ import torch
 import json
 from itertools import permutations
 
-filename = "dblp_papers_v11.txt"
+filename = "dblp_papers_v11.txt" # can be downloaded from https://www.aminer.org/citation, V11
 def data_preprocess(filename):
     authordict = {}
     fosdict = {}
