@@ -2,7 +2,7 @@
 
 This repository contains the code for the following paper,
 
-**GENIUS: Subteam Replacement with Clustering-based Graph Neural Networks**<br/>
+**[GENIUS: Subteam Replacement with Clustering-based Graph Neural Networks (SDM'24)](https://epubs.siam.org/doi/abs/10.1137/1.9781611978032.2)**<br/>
 *Chuxuan Hu, Qinghai Zhou, and Hanghang Tong*
 
 In this paper, we introduce GENIUS, a clustering-based graph neural network (GNN) framework that (1) captures team social network knowledge for *subteam replacement* by deploying team-level attention GNNs (*TAGs*) and self-supervised *positive team contrasting* training scheme, (2) generates unsupervised team social network member clusters to prune candidates for fast computation, and (3) incorporates a *subteam recommender* that selects new subteams of flexible sizes.
