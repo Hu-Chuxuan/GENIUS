@@ -30,9 +30,7 @@ def numpy_to_graph(A,node_features):
 
 def Criterion(team_orig,team_new, x, adj):
     ged = 0
-    wl = 0
     sp = 0
-    p = 0
     m = 0
     for i in range(len(team_orig)):
         A0 = adj.take(team_orig[i],0).take(team_orig[i],1)
@@ -56,15 +54,6 @@ def Criterion(team_orig,team_new, x, adj):
         print("The", i, "th sample has ShortestPath Base = ", tmp0)
         print("The", i, "th sample has ShortestPath diff = ", _)
 
-        G = PathUpToH()
-        tmp = G._compute_single_kernel_series(G0, G1)
-        tmp0 = G._compute_single_kernel_series(G0, G0)
-        _ = abs(tmp-tmp0)/tmp0
-        p += _
-        print("The", i, "th sample has PathUpToH = ", tmp)
-        print("The", i, "th sample has PathUpToH Base = ", tmp0)
-        print("The", i, "th sample has PathUpToH diff = ", _)
-
         G = Marginalized()
         tmp = G._compute_single_kernel_series(G0, G1)
         tmp0 = G._compute_single_kernel_series(G0, G0)
@@ -75,7 +64,5 @@ def Criterion(team_orig,team_new, x, adj):
         print("The", i, "th sample has Marginalized diff = ", _)
 
     print("ged = ", ged)
-    print("wl = ", wl)
     print("sp = ", sp)
-    print("p = ", p)
     print("m = ", m)
