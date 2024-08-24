@@ -10,3 +10,12 @@ We demonstrate the efficacy of the proposed method in terms of (1) *effectivenes
 Please refer to our paper for more details.
 
 ![Figure Not Found](./assets/system_diagram.png)
+
+### File Descriptions
+`genius.py` : Implementation for the entire GENIUS framework, including the team encoder, subteam recommender, and the training schema.
+
+`tag.py` : Implementation for the team encoder with the Team-level Attention GNNs (*TAGs*)
+
+`evaluation.py` : The evaluation code using 3 different graph similarity metrics as mentioned in Section 4.1.
+
+`dblp.py`: Code for loading data using the DBLP dataset as an example.
